@@ -49,4 +49,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- My own keybindings
 vim.keymap.set({ 'n', 'v', 'i' }, '<leader>s', ':w<CR>', { desc = 'write to to the current file' })
+
+vim.keymap.set({ 'n', 'v', 'i' }, '<C-z>', '<cmd>echo "use :q to quit!!" <CR>') -- accidentally closing the neovim.
 -- vim: ts=2 sts=2 sw=2 et
